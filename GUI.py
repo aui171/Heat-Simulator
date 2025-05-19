@@ -48,7 +48,7 @@ def CreateHeatSource():
 	rate = HSrate.get()
 	global chosen_points
 	for i in chosen_points:
-		Sim.HeatSource(i[1], i[0], int(rate) * 10)
+		Sim.HeatSource(i[1], i[0], float(rate) * 10)
 	chosen_points = []
 	print ('Heat source created')
 
