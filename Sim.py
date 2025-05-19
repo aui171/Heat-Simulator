@@ -110,7 +110,7 @@ def HeatUpdate(T):
 	T_new[-1, :] = 0.0
 	T_new[:, 0] = 0.0
 	T_new[:, -1] = 0.0
-	T_new += np.ones((Ny, Nx)) * 30 / (Nx * Ny)
+	T_new -= np.ones((Ny, Nx)) * 30 / (Nx * Ny)
 	return T_new
 
 '''
